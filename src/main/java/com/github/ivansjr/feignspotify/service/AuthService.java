@@ -2,8 +2,11 @@ package com.github.ivansjr.feignspotify.service;
 
 import com.github.ivansjr.feignspotify.dto.LoginRequestDTO;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AuthService {
+
     @Value("${auth.client-id}")
     private String clientId;
 
